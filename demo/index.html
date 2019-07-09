@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Theme Starz">
+
+    <title>Zoner = Real Estate Full Package template</title>
+    <link rel="stylesheet" href="http://www.themestarz.net/html/iframe-style.css">        
+</head>
+
+<body>
+<div id="ts-envato-header">
+    <div class="preview__envato-logo">
+        <a href="https://themeforest.net/item/zoner-real-estate-html-template/9996429?ref=ThemeStarz">Envato Market</a>
+    </div>
+    <div class="preview__actions">
+        <div class="preview__action--buy" style="">
+            <a class="e-btn--3d -color-primary" href="https://themeforest.net/item/zoner-real-estate-html-template/9996429?ref=ThemeStarz">Buy now</a>
+        </div>
+        <div class="preview__action--close">
+            <a href="index.html#" id="remove-frame">
+                <i class="e-icon -icon-cancel"></i>
+                <span>Remove </span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<iframe id="iframe" src="index2.html">
+
+</iframe>
+
+<script>
+    this.top.location !== this.location && (this.top.location = this.location);
+
+    (function () {
+
+        document.getElementById("remove-frame").onclick = function() {
+            window.location.href = document.getElementById("iframe").src;
+        };
+    })();
+
+</script>
+</body>
+</html>
